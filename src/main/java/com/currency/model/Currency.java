@@ -1,6 +1,6 @@
 package com.currency.model;
 
-import com.currency.Symbol;
+import com.currency.enums.Symbol;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -16,10 +16,12 @@ import java.util.Map;
 public class Currency {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
 
     String name;
 
+    @Enumerated(EnumType.STRING)
     Symbol symbol;
 
     @ElementCollection
