@@ -15,4 +15,10 @@ public interface CurrencyService {
 
     Currency updateCurrencyRate(Currency currency);
 
+    Double convertCurrency(Symbol from, double value, Symbol to);
+
+    Double addCurrency(double from, double to);
+
+
+
 }
