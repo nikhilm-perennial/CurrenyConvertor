@@ -17,8 +17,10 @@ public interface CurrencyService {
 
     Double convertCurrency(Symbol from, double value, Symbol to);
 
-    Double addCurrency(double from, double to);
 
+    Double convertToCommonCurrency(Symbol symbol,double value);
 
+    Double addCurrency(Symbol from, double valueFrom, Symbol to, double valueTo);
 
+    Double subtractCurrency(Symbol from, double valueFrom, Symbol to, double valueTo);
 }
