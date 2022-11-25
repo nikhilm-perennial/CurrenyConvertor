@@ -2,9 +2,12 @@ package com.currency.enums;
 
 public enum Symbol {
 
-    INR,
-    USD,
-    EUR,
-    GBP,
-    JPY
+    INR("Indian Rupee"),
+    USD("US Dollar"),
+    EUR("European Dollar"),
+    GBP("British Pounds"),
+    JPY("Japanese Yen");
+
+    Symbol(String s) {
+    }
 }
